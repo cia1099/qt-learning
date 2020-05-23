@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.10.0)
+project(Shape)
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+add_library(Shape SHARED shape.cpp)
+set_target_properties(Shape PROPERTIES VERSION 1.0 SOVERSION 1)
+
+add_definitions(-DUNICODE -D_UNICODE -DSHAPE_LIB)
+
+set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../opencv)
+find_package(OpenCV 4.0.0 REQUIRED)
+if(OpenCV_FOUND)
+    message(STATUS "opencv version: " ${OpenCV_VERSION})
+    message(STATUS "opencv include dir: " ${OpenCV_INCLUDE_DIRS})
+    # target_include_directories(Shape ${OpenCV_INCLUDE_DIRS})
+    include_directories(${OpenCV_INCLUDE_DIRS})
+    target_link_libraries(Shape ${OpenCV_LIBS})
+else()
+    message(FATAL_ERROR "opencv not found")
+endif()
+
+find_package(Qt5 COMPONENTS Core Gui REQUIRED)
+# target_include_directories(Shape ${Qt5Core_INCLUDE_DIRS} ${Qt5Gui_INCLUDE_DIRS})
+include_directories(${Qt5Core_INCLUDE_DIRS} ${Qt5Gui_INCLUDE_DIRS})
+target_link_libraries(Shape ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES})
+target_include_directories(Shape PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+

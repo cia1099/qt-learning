@@ -1,0 +1,4 @@
+[ref.] https://blog.csdn.net/fan2273/article/details/78262952
+
+要使用VS2015 x64 Native Tools 命令執行
+D:\Program_Files\Qt\Qt5.11.3\5.11.3\msvc2015_64\bin\windeployqt.exe VisionForm.exe

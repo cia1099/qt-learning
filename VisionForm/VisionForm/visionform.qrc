@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/add.png</file>
+        <file>icons/C2C.png</file>
+        <file>icons/C2L.png</file>
+        <file>icons/L2L.png</file>
+        <file>icons/LLa.png</file>
+        <file>icons/LLp.png</file>
+        <file>icons/P2C.png</file>
+        <file>icons/p2p.png</file>
+        <file>icons/PPl.png</file>
+        <file>icons/PPPc.png</file>
+        <file>icons/substract.png</file>
+        <file>icons/point2line.png</file>
+        <file alias="app">icons/app.png</file>
+        <file alias="cancel">icons/cancel.png</file>
+        <file alias="copy">icons/copy.png</file>
+        <file alias="cut">icons/cut.png</file>
+        <file alias="done">icons/done.png</file>
+        <file alias="new">icons/new.png</file>
+        <file alias="objects">icons/objects.png</file>
+        <file alias="open">icons/open.png</file>
+        <file alias="paste">icons/paste.png</file>
+        <file alias="quit">icons/quit.png</file>
+        <file alias="save">icons/save.png</file>
+        <file alias="verify">icons/verify.png</file>
+        <file alias="camera">icons/camera.png</file>
+        <file alias="gen_circle">icons/ic_gen_circle.png</file>
+        <file alias="gen_line">icons/ic_gen_line.png</file>
+        <file alias="fit_window">icons/fit-window.png</file>
+        <file alias="lana">icons/lana.png</file>
+        <file alias="checkerboard">icons/checkerboard.png</file>
+        <file alias="view_tree">icons/view-tree-icon.png</file>
+    </qresource>
+</RCC>

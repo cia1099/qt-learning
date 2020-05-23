@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.10.0)
+project(PopWidgets)
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+add_library(PopWidgets SHARED popwidgets.cpp flowwidget.cpp resultpreview.cpp popwidgets.qrc
+CalibrationForm.ui CaptureForm.ui ComputeToolForm.ui ResultPreviewForm.ui ToolForm.ui
+DialogButtonRight.ui)
+set_target_properties(PopWidgets PROPERTIES VERSION 1.0 SOVERSION 1)
+
+add_definitions(-DUNICODE -D_UNICODE -DPOPWIDGETS_LIB)
+
+set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../opencv)
+find_package(OpenCV 4.0.0 REQUIRED)
+if(OpenCV_FOUND)
+    message(STATUS "opencv version: " ${OpenCV_VERSION})
+    message(STATUS "opencv include dir: " ${OpenCV_INCLUDE_DIRS})
+    # target_include_directories(Shape ${OpenCV_INCLUDE_DIRS})
+    include_directories(${OpenCV_INCLUDE_DIRS})
+    target_link_libraries(PopWidgets ${OpenCV_LIBS})
+else()
+    message(FATAL_ERROR "opencv not found")
+endif()
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
+add_definitions(${Qt5Widgets_DEFINITIONS})
+target_link_libraries(PopWidgets ${Qt5Widgets_LIBRARIES})
+target_include_directories(PopWidgets PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# target_link_directories(PopWidgets AFTER PRIVATE ${CMAKE_BINARY_DIR})
+link_directories(${CMAKE_BINARY_DIR})
+target_link_libraries(PopWidgets Shape MySource)

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolUI</class>
+ <widget class="QWidget" name="ToolUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>824</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>計算工具</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QToolButton" name="toolButton">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="toolTipDuration">
+          <number>6</number>
+         </property>
+         <property name="text">
+          <string>點到點的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/p2p.png</normaloff>:/icons/p2p.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QToolButton" name="toolButton_2">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>點到線的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/point2line.png</normaloff>:/icons/point2line.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QToolButton" name="toolButton_3">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>線到線的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/L2L.png</normaloff>:/icons/L2L.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QToolButton" name="toolButton_4">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>兩圓的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/C2C.png</normaloff>:/icons/C2C.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QToolButton" name="toolButton_5">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>圓到線的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/C2L.png</normaloff>:/icons/C2L.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QToolButton" name="toolButton_6">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>點到圓的距離</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/P2C.png</normaloff>:/icons/P2C.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="toolButton_7">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>兩直線的夾角</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/LLa.png</normaloff>:/icons/LLa.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QToolButton" name="toolButton_10">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>兩條線的交點</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/LLp.png</normaloff>:/icons/LLp.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QToolButton" name="toolButton_11">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>兩點成的直線</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/PPl.png</normaloff>:/icons/PPl.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QToolButton" name="toolButton_12">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>三點成的圓</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/PPPc.png</normaloff>:/icons/PPPc.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QToolButton" name="toolButton_9">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>A+B</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/add.png</normaloff>:/icons/add.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QToolButton" name="toolButton_8">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>A-B</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../VisionForm/visionform.qrc">
+           <normaloff>:/icons/substract.png</normaloff>:/icons/substract.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>擬合工具</string>
+      </attribute>
+      <widget class="QToolButton" name="toolButton_13">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>131</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>線特徵</string>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_14">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>50</y>
+         <width>131</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>圓特徵</string>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_15">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>50</y>
+         <width>131</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>矩形特徵</string>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextUnderIcon</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../VisionForm/visionform.qrc"/>
+ </resources>
+ <connections/>
+</ui>
